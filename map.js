@@ -53,15 +53,15 @@ const schools = [
   { name: "艮山中学", coord: [30.272031, 120.182109], type: 2 },
   { name: "绿城育华", coord: [30.292914, 120.081682], type: 2 },
   { name: "天目高级", coord: [30.231429, 119.691024], type: 2 },
-  { name: "学军文渊", coord: [30.221459, 120.236295], type: 0 },
-  { name: "桐庐中学", coord: [29.79788, 119.69177], type: 0 },
+  { name: "学军文渊", coord: [30.221459, 120.236295], type: 3 },
+  { name: "桐庐中学", coord: [29.79788, 119.69177], type: 3 },
 ];
 
 const toMapboxLngLat = ([lat, lng]) => [lng, lat];
 const map = new mapboxgl.Map({
   container: "map",
-  style: "mapbox://styles/mapbox/streets-v12",
-  center: toMapboxLngLat([30.248787, 120.10473]),
+  style: "mapbox://styles/mapbox/light-v11",
+  center: toMapboxLngLat([30.24, 120.12]),
   zoom: 10,
 });
 
@@ -93,11 +93,11 @@ map.on("load", () => {
         "match",
         ["get", "type"],
         1,
-        "#ef4444",
+        "#941100",
         2,
-        "#1d4ed8",
+        "#1d9bf0",
         3,
-        "#16a34a",
+        "#1d9bf0",
         "#6b7280",
       ],
       "circle-stroke-width": 1,
