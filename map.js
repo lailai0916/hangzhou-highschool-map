@@ -32,7 +32,7 @@ const schools = [
   { name: "杭四江东", coord: [30.285605, 120.541391], type: 2 },
   { name: "杭二富春", coord: [30.082816, 119.877555], type: 2 },
   { name: "杭七转塘", coord: [30.151663, 120.051926], type: 2 },
-  { name: "杭师大二附", coord: [30.347408, 120.023875], type: 2 },
+  { name: "杭师大附二中", coord: [30.347408, 120.023875], type: 2 },
   { name: "学军桐庐", coord: [29.775618, 119.700369], type: 2 },
   { name: "长河二高", coord: [30.308282, 120.53534], type: 2 },
   { name: "源清二高", coord: [30.378253, 120.1445], type: 2 },
@@ -53,15 +53,15 @@ const schools = [
   { name: "艮山中学", coord: [30.272031, 120.182109], type: 2 },
   { name: "绿城育华", coord: [30.292914, 120.081682], type: 2 },
   { name: "天目高级", coord: [30.231429, 119.691024], type: 2 },
-  { name: "学军文渊", coord: [30.221459, 120.236295], type: 2 },
-  { name: "桐庐中学", coord: [29.79788, 119.69177], type: 2 },
+  { name: "学军文渊", coord: [30.221459, 120.236295], type: 0 },
+  { name: "桐庐中学", coord: [29.79788, 119.69177], type: 0 },
 ];
 
 const toMapboxLngLat = ([lat, lng]) => [lng, lat];
 const map = new mapboxgl.Map({
   container: "map",
   style: "mapbox://styles/mapbox/streets-v12",
-  center: toMapboxLngLat([30.248787, 120.20473]),
+  center: toMapboxLngLat([30.248787, 120.10473]),
   zoom: 10,
 });
 
@@ -111,10 +111,21 @@ map.on("load", () => {
     source: "hangzhou-schools",
     layout: {
       "text-field": ["get", "name"],
-      "text-anchor": "top",
-      "text-offset": [0, -2],
-      "text-size": 8,
+      "text-size": 9,
       "text-font": ["Noto Sans Regular", "Arial Unicode MS Regular"],
+      "text-variable-anchor": [
+        "top",
+        "bottom",
+        "left",
+        "right",
+        "top-left",
+        "top-right",
+        "bottom-left",
+        "bottom-right",
+      ],
+      "text-radial-offset": 0.6,
+      "text-justify": "auto",
+      "text-allow-overlap": true,
     },
     paint: {
       "text-color": "#111827",
