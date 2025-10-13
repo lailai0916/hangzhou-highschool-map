@@ -111,7 +111,7 @@ map.on("load", () => {
     source: "hangzhou-schools",
     layout: {
       "text-field": ["get", "name"],
-      "text-size": 9,
+      "text-size": 12,
       "text-font": ["Noto Sans Regular", "Arial Unicode MS Regular"],
       "text-variable-anchor": [
         "top",
