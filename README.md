@@ -5,7 +5,7 @@
 
 ## # Project Introduction
 
-Map of High School Distribution in Hangzhou City.
+Map of High School Distribution in Hangzhou, China.
 
 ## # Getting Started
 
