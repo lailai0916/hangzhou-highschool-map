@@ -1,9 +1,6 @@
 mapboxgl.accessToken =
   "pk.eyJ1IjoibGFpbGFpMDkxNiIsImEiOiJjbWdvcDRxamgxejBjMnFxNGVsYnZ4NnpwIn0.MjuRwdECag6ohYsN9VmK1Q";
 
-const hangzhouCenter = [30.2741, 120.1551];
-const toMapboxLngLat = ([lat, lng]) => [lng, lat];
-
 const schools = [
   { name: "杭二滨江", coord: [30.1785503, 120.1323586], type: 1 },
   { name: "学军西溪", coord: [30.280919, 120.134296], type: 1 },
@@ -29,10 +26,11 @@ const schools = [
   { name: "十四青山湖", coord: [-1, -1], type: 2 },
 ];
 
+const toMapboxLngLat = ([lat, lng]) => [lng, lat];
 const map = new mapboxgl.Map({
   container: "map",
   style: "mapbox://styles/mapbox/streets-v12",
-  center: toMapboxLngLat(hangzhouCenter),
+  center: toMapboxLngLat([30.248787, 120.20473]),
   zoom: 12,
 });
 
