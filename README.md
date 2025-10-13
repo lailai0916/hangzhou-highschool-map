@@ -1,6 +1,6 @@
 <div align="center">
   <h1>Hangzhou HighSchool Map</h1>
-  <p>English | <a href="README.zh-Hans.md">简体中文</a></p
+  <p>English | <a href="README.zh-Hans.md">简体中文</a></p>
 </div>
 
 ## # Project Introduction
