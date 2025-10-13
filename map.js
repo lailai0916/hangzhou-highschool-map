@@ -54,6 +54,7 @@ const schools = [
   { name: "绿城育华", coord: [30.292914, 120.081682], type: 2 },
   { name: "天目高级", coord: [30.231429, 119.691024], type: 2 },
   { name: "学军文渊", coord: [30.221459, 120.236295], type: 2 },
+  { name: "桐庐中学", coord: [29.79788, 119.69177], type: 2 },
 ];
 
 const toMapboxLngLat = ([lat, lng]) => [lng, lat];
