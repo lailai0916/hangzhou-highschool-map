@@ -4,26 +4,27 @@
   <img src="image/map.png" />
 </div>
 
-## # 项目简介
+## 项目简介
 
 中国杭州的高中分布地图。
 
-## # 快速开始
+## 快速开始
 
 ```bash
 git clone https://github.com/lailai0916/hangzhou-highschool-map.git
 cd hangzhou-highschool-map
 ```
 
-## # 项目结构
+## 项目结构
 
 ```bash
 hangzhou-highschool-map
+├── image/                         # 图片文件
 ├── index.html                     # 主页面
 ├── map.js                         # 地图逻辑
 └── style.css                      # 地图样式
 ```
 
-## # 许可协议
+## 许可协议
 
 本项目采用 [MIT 许可协议](LICENSE)。

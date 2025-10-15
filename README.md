@@ -4,26 +4,27 @@
   <img src="image/map.png" />
 </div>
 
-## # Project Introduction
+## Project Introduction
 
 Map of High School Distribution in Hangzhou, China.
 
-## # Getting Started
+## Getting Started
 
 ```bash
 git clone https://github.com/lailai0916/hangzhou-highschool-map.git
 cd hangzhou-highschool-map
 ```
 
-## # Project Structure
+## Project Structure
 
 ```bash
 hangzhou-highschool-map
+├── image/                         # Image files
 ├── index.html                     # Main page
 ├── map.js                         # Map logic
 └── style.css                      # Map style
 ```
 
-## # License
+## License
 
 This project licensed under [MIT License](LICENSE).
