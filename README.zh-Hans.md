@@ -1,6 +1,7 @@
 <div align="center">
   <h1>杭州高中地图</h1>
   <p>English | <a href="README.zh-Hans.md">简体中文</a></p>
+  <img src="image/map.png" />
 </div>
 
 ## # 项目简介
