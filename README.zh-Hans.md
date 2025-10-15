@@ -13,12 +13,13 @@
 ```bash
 git clone https://github.com/lailai0916/hangzhou-highschool-map.git
 cd hangzhou-highschool-map
+open index.html
 ```
 
 ## 项目结构
 
 ```bash
-hangzhou-highschool-map
+hangzhou-highschool-map/
 ├── image/                         # 图片文件
 ├── index.html                     # 主页面
 ├── map.js                         # 地图逻辑

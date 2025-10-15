@@ -13,12 +13,13 @@ Map of High School Distribution in Hangzhou, China.
 ```bash
 git clone https://github.com/lailai0916/hangzhou-highschool-map.git
 cd hangzhou-highschool-map
+open index.html
 ```
 
 ## Project Structure
 
 ```bash
-hangzhou-highschool-map
+hangzhou-highschool-map/
 ├── image/                         # Image files
 ├── index.html                     # Main page
 ├── map.js                         # Map logic
