@@ -39,7 +39,7 @@ map.on("load", () => {
         "#941100",
         2,
         "#ff9300",
-        "#ff9300",
+        "#777777",
       ],
       "circle-stroke-width": 1,
       "circle-stroke-color": "#ffffff",
